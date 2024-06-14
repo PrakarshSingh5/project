@@ -1,0 +1,21 @@
+.main{
+    background: #000;
+    color: white;
+    padding: 5px 32px;
+}
+.container{
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+.midcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    text-align: center;
+}

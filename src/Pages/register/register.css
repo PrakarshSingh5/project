@@ -1,0 +1,56 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);;
+    /* background: url("https://images.unsplash.com/photo-1559386484-97dfc0e15539?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    /* background-size: cover; */
+
+}
+.registerform{
+    display: flex;
+    flex-direction: column;
+
+}
+.registertitle{
+    font-size: 50px;
+}
+.registerloginbtn{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.registerform>label{
+    margin-top: 10px;
+}
+.registerform>input:focus{
+    outline: none;
+}
+.registerform>input{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+   
+    margin-top: 10px;
+
+}
+
+.registerbtn{
+    padding: 10px;
+    margin: 20px 0px;
+    border: none;
+    color: white;
+    background-color: teal;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}

@@ -1,0 +1,55 @@
+.login{
+  
+   height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    /* background: url("https://images.unsplash.com/photo-1559386484-97dfc0e15539?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background-size: cover;
+}
+.logintitle{
+    font-size: 50px;
+}
+.loginform{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginform > label{
+    margin: 10px 0;
+}
+.loginform>Input{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+.loginform>Input:focus{
+    outline:none;
+}
+.loginuser{
+        margin-top: 20px;
+        cursor:pointer;
+        background-color: lightcoral;
+        border: none;
+        color: white;
+        border-radius:10px;
+        padding: 10px;
+}
+.loginuser:disabled{
+        cursor: not-allowed;
+        background-color: rgb(229, 166, 166);
+}
+.registeruser{
+   position: absolute;
+   top: 60px;
+   right: 20px;
+   cursor: pointer;
+   border: none;
+   background-color: teal;
+   padding: 10px;
+   color: white;
+   border-radius: 10px;
+}
