@@ -33,13 +33,13 @@ export default function Profile() {
       data.append("file",file);
       updateuser.profilepicture=filename;
       try{
-        await axios.post("/api/upload",data);
+        await axios.post("https://society-sphere-backend.onrender.com/api/upload",data);
       }catch(err){
           console.log(err);
       }
     }
     try{
-     const res= await axios.put("/api/users/"+ user._id , updateuser);
+     const res= await axios.put("https://society-sphere-backend.onrender.com/api/users/"+ user._id , updateuser);
       setSuccess(true);
       dispatch({type:"UPDATE_SUCCESS",payload:res.data})
     }catch(err){
