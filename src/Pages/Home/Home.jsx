@@ -11,7 +11,7 @@ export default function Home() {
   const {search}=useLocation();
   useEffect(()=>{
       const fetchPosts=async()=>{
-          await axios.get("/api/posts"+search)
+          await axios.get("https://society-sphere-backend.onrender.com/api/posts"+search)
         .then((res)=>{
           setPosts(res.data);
         });
