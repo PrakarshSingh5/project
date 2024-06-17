@@ -25,7 +25,7 @@ export default function Newpost() {
       data.append("file",file)
       newPost.photo=filename;
       try{
-        await axios.post("/api/upload",data);
+        await axios.post("https://society-sphere-backend.onrender.com/api/upload",data);
       }catch(err){
           console.log(err);
       }
