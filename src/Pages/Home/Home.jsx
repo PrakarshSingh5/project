@@ -13,6 +13,8 @@ export default function Home() {
       const fetchPosts=async()=>{
           await axios.get("https://society-sphere-backend.onrender.com/api/posts")
         .then((res)=>{
+          console.log(res.data);
+          console.log(res);
           setPosts(res.data);
         });
         
@@ -20,7 +22,7 @@ export default function Home() {
       fetchPosts();
   },[search])
 
-  console.log(posts);
+
   return (
     <div>
         <Header/>
