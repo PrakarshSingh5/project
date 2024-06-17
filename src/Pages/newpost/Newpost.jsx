@@ -31,7 +31,7 @@ export default function Newpost() {
       }
     }
     try{
-     const res=await axios.post("/api/posts",newPost);
+     const res=await axios.post("https://society-sphere-backend.onrender.com/api/posts",newPost);
      console.log(res);
      window.location.replace("/post/" + res.data._id);
     }catch(err){
