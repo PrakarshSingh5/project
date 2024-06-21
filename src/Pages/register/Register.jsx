@@ -18,7 +18,7 @@ export default function Register() {
       password,
     });
     cout<<" pra";
-    res.data && window.location.replace("/login");
+    res.data.data && window.location.replace("/login");
    }catch(err){
      setError(true);
    }
