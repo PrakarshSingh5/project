@@ -17,11 +17,14 @@ export default function Register() {
       email,
       password,
     });
-    console.log(res.data);
-    res.data && window.location.replace("/login");
-   }catch(err){
-     setError(true);
-   }
+    console.log('Response data:', res.data); // Debugging line
+    if (res.data) {
+      window.location.replace("/login");
+    }
+  } catch (err) {
+    console.error('Error:', err); // Debugging line
+    setError(true);
+  }
    
    
   };
