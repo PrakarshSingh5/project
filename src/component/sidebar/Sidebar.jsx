@@ -7,7 +7,7 @@ export default function Sidebar() {
   const [cats , setCate]=useState([]);
   useEffect(()=>{
     const getCats=async()=>{
-      const res=await axios.get('/api/categories');
+      const res=await axios.get('https://society-sphere-backend.onrender.com/api/categories');
       setCate(res.data);
     }
     getCats();

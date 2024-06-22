@@ -17,21 +17,21 @@ export default function Newpost() {
       title,
       desc,
     };
-    // if(file){
-    //   const data =new FormData();
-    //   const filename=Date.now()+file.name;
+    if(file){
+      const data =new FormData();
+      const filename=Date.now()+file.name;
       
-    //   data.append("name",filename);
-    //   data.append("file",file)
-    //   newPost.photo=filename;
-    //   try{
-    //     await axios.post("/api/upload",data);
-    //   }catch(err){
-    //       console.log(err);
-    //   }
-    // }
+      data.append("name",filename);
+      data.append("file",file)
+      newPost.photo=filename;
+      try{
+        await axios.post("https://society-sphere-backend.onrender.com/api/upload",data);
+      }catch(err){
+          console.log(err);
+      }
+    }
     try{
-     const res=await axios.post("/api/posts",newPost);
+     const res=await axios.post("https://society-sphere-backend.onrender.com/api/posts",newPost);
      console.log(res);
      window.location.replace("/post/" + res.data._id);
     }catch(err){

@@ -5,7 +5,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://society-sphere-backend.onrender.com/",
+        target: "https://society-sphere-backend.onrender.com/api",
         changeOrigin: true,
       },
     },
