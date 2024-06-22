@@ -17,7 +17,7 @@ const [update,setUpdate]=useState(false);
    const {user} =useContext(Context);
 const handledelete=async()=>{
 try{ 
-  await axios.delete(`/api/posts/${post._id}`,{
+  await axios.delete(`https://society-sphere-backend.onrender.com/api/posts/${post._id}`,{
     data:{username:user.username},
   });
   window.location.replace("/");
@@ -27,7 +27,7 @@ try{
 }
 const handleupdate=async()=>{
   try{
-    await axios.put(`/api/posts/${post._id}`,
+    await axios.put(`https://society-sphere-backend.onrender.com/api/posts/${post._id}`,
       {username:user.username, title,desc }
     );
     setUpdate(false);
@@ -37,7 +37,7 @@ const handleupdate=async()=>{
 }
   useEffect(()=>{
     const getPost=async ()=>{
-      const res=await axios.get("/api/posts/"+path);
+      const res=await axios.get("https://society-sphere-backend.onrender.com/api/posts/"+path);
       setPost(res.data);
       setDesc(res.data.desc);
       setTitle(res.data.title);
