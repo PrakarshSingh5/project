@@ -13,7 +13,7 @@ const [title,setTitle]=useState("");
 const [desc,setDesc]=useState("");
 const [update,setUpdate]=useState(false);
   const [post,setPost]=useState({});
-   const pblfolder="http://localhost:5000/images/";
+   const pblfolder="https://society-sphere-backend.onrender.com/images/";
    const {user} =useContext(Context);
 const handledelete=async()=>{
 try{ 

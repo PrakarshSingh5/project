@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './post.css'
 
 export default function Post({post}) {
-  const pblfolder="http://localhost:5000/images/"
+  const pblfolder="https://society-sphere-backend.onrender.com/images/"
   return (
     <div className='post'>
       {post.photo && (
