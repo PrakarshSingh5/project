@@ -13,9 +13,7 @@ function About() {
             apps.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+           This is a website where every society can post their information so that every student can take the information fromhere 
           </p>
           <div className="flex justify-center">
             <a
