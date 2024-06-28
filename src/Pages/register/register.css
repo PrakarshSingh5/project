@@ -1,17 +1,16 @@
 .register{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 110px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);;
-    /* background: url("https://images.unsplash.com/photo-1559386484-97dfc0e15539?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-    /* background-size: cover; */
-
+    width: 100%;
+    background-color: white;
 }
 .registerform{
     display: flex;
     flex-direction: column;
+    width: 50%;
 
 }
 .registertitle{
@@ -37,9 +36,9 @@
 .registerform>input{
     border: none;
     border-radius: 10px;
-    padding: 10px;
-   
+    padding: 20px;
     margin-top: 10px;
+    border-bottom: 1px solid gray;
 
 }
 
@@ -51,6 +50,8 @@
     background-color: teal;
     border-radius: 10px;
     cursor: pointer;
-
-
+}
+.registerbtn:hover{
+    background-color: rgb(23, 116, 116);
+    color: rgb(42, 40, 40);
 }

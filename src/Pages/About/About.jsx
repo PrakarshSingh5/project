@@ -3,40 +3,24 @@ import './about.css';
 
 function About() {
   return (
-    <div>
-      <section className='main'>
-      <div className="container">
-        <div className="midcontainer">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Prakarsh.
-            <br className="hidden lg:inline-block" />I love to build amazing
-            apps.
-          </h1>
-          <p className="mb-8 leading-relaxed">
-           This is a website where every society can post their information so that every student can take the information fromhere 
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="#contact"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              Work With Me
-            </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              See My Past Work
-            </a>
+    <div className='container_about'>
+        <div className='top1'>
+            <h1>About us</h1>
+        </div>
+        <div className='bottom'>
+          <div className='wrapper1'>
+            <div className='info_img'>
+                 <img src='https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt=''/>
+            </div>
+             <div className='info_data'>
+                  <p>Our Website aim to Invite every different socities of college come on single platform and 
+                    post all the information regarding there upcoming and past events such that every college student can access every information on
+                    a single platoform easily without going on different platforms.
+                  </p>
+             </div>
+             
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./coding.svg"
-          />
-        </div>
-      </div>
-      </section>
     </div>
   )
 }
